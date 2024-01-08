@@ -1,0 +1,40 @@
+<form class="js-submit-settings">
+  <div class="kintoneplugin-row">
+    <label for="select-space-field" class="kintoneplugin-label">
+      Button Space Field
+      <span class="kintoneplugin-require">*</span>
+    </label>
+    <p class="kintoneplugin-desc">Please select a Space field where the button will be placed.</p>
+    <div class="kintoneplugin-select-outer">
+      <div class="kintoneplugin-select">
+        <select name="js-select-space-field" id="select-space-field" required>
+          <option value="">-----</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="kintoneplugin-row">
+    <label for="select-space-field" class="kintoneplugin-label">
+      PDF欄位設定
+      <span class="kintoneplugin-require">*</span>
+    </label>
+    <p class="kintoneplugin-desc">請設定欲從PDF檔中取得資料的欄位id及客製化變數</p>
+    <div class="pdf-uploader-setting-table--pdf"></div>
+  </div>
+  <div class="kintoneplugin-row">
+    <label for="select-space-field" class="kintoneplugin-label">
+      資料欄位設定
+      <span class="kintoneplugin-require">*</span>
+    </label>
+    <p class="kintoneplugin-desc">
+      請選擇要置入資料的欄位以及設定該欄位的值
+      <br>
+      設定範例：${pdf客製化變數}
+    </p>
+    <div class="pdf-uploader-setting-table--record"></div>
+  </div>
+  <p class="kintoneplugin-row">
+    <button type="button" class="js-cancel-button kintoneplugin-button-dialog-cancel">Cancel</button>
+    <button class="js-save-button kintoneplugin-button-dialog-ok">Save</button>
+  </p>
+</form>

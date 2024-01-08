@@ -1,0 +1,41 @@
+{
+  "manifest_version": 1,
+  "version": "1.0.0",
+  "type": "APP",
+  "name": {
+    "en": "Import PDF data plug-in",
+    "zh": "導入PDF資料插件"
+  },
+  "description": {
+    "en": "Upload a PDF file and pass the value in the file into the corresponding field",
+    "zh": "上傳PDF檔案並將檔案中的值傳入對應欄位"
+  },
+  "icon": "image/pdf.png",
+  "desktop": {
+    "js": [
+      "js/pdf-lib.min.js",
+      "js/desktop.js"
+    ],
+    "css": [
+      "css/desktop.css"
+    ]
+  },
+  "config": {
+    "html": "html/config.html",
+    "js": [
+      "https://js.kintone.com/jquery/3.3.1/jquery.min.js",
+      "js/kintone-config-helper.js",
+      "js/kuc.min.js",
+      "js/config.js"
+    ],
+    "css": [
+      "css/51-modern-default.css",
+      "css/config.css"
+    ],
+    "required_params": [
+      "space",
+      "pdf_setting",
+      "fields_setting"
+    ]
+  }
+}
